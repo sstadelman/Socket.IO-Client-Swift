@@ -43,6 +43,7 @@ SocketIOClient* socket = [[SocketIOClient alloc] initWithSocketURL:@"localhost:8
 [socket connect];
 
 ```
+> In both Swift and Objective-C examples, the `SocketIOClient socket` should be persistently retained.  The connection will be dropped if the `SocketIOClient` is deallocated.
 
 ##Features
 - Supports socket.io 1.0+
